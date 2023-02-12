@@ -113,7 +113,7 @@ padding-bottom: 80px;
   right: 32px;
   font-size: 15px;
   color: black;
-  background-color: #1bff7a;
+  background-color: #fff71b;
   width: 35px;
   height: 25px;
   border-radius: 22%;
@@ -137,7 +137,6 @@ padding-bottom: 80px;
   color: #676632;
   background-color: #1bff7a;
   border-radius:15px;
-
   font-family: 'Unbounded', cursive;
   margin-bottom: 10px;
   cursor: pointer;
@@ -264,7 +263,7 @@ text-align: end;
 /* footer banner */
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #151414;
+  background-color: #1a1a1a;
   rotate: 0deg;
   border-radius: 50px;
   position: relative;
@@ -532,8 +531,9 @@ padding: 20px 10px;
 .product .cart-product-image{
   width:180px ;
   height: 150px;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: #ebebeb;
+  margin-left: 20px
 ;
 }
 .item-desc .flex{
@@ -549,8 +549,10 @@ padding: 20px 10px;
 }
 .flex h5{
   font-size: 24px;
+  color: white;
 }
 .flex h4{
+  color: white;
   font-size: 20px;
 }
 .total{
@@ -1082,11 +1084,13 @@ margin-top: 160px;
 }
 .flex h5{
   font-size: 16px;
-   color: #324d67;
+  color: white;
+
 }
 .flex h4{
   font-size: 16px;
-   color: black;
+  color: white;
+
 }
 .cart-bottom{
   padding: 30px;
@@ -1135,7 +1139,7 @@ margin-top: 160px;
   width: 155px;
   align-items: center;
   appearance: none;
-  background-color: #0b0b0b;
+  background-color: #fffb00;
   border-radius: 15px;
   border-color: transparent;
   border-width: 0;
@@ -1167,11 +1171,11 @@ margin-top: 160px;
 }
 
 .buttonPrch:focus {
-  box-shadow: #000000 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #050505 0 -3px 0 inset;
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .buttonPrch:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgb(11, 11, 11) 0 7px 13px -3px, #252525 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
