@@ -15,6 +15,7 @@ export default async function handler(req, res) {
         billing_address_collection: 'required',        
         shipping_options: [
           { shipping_rate: 'shr_1MacBSLX27mVeMm892noFsut' },
+          { shipping_rate: 'shr_1MadSPLX27mVeMm82Q8KjntT' },
           { shipping_rate: 'shr_1MacBeLX27mVeMm8aI0Lya4h' },
         ],
         line_items: req.body.map((item) => {
