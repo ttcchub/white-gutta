@@ -17,10 +17,10 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const ProductDetails = ({ product, products }) => {
-  const { image, name, details, price , soldout , disableBtn } = product;
+  const { image, name, details, price , size, soldout  } = product;
   // gerring the product id 
   const [index, setIndex] = useState(0);
-  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+  const { decQty, incQty, qty, onAdd, setShowCart , buttonsNext} = useStateContext();
 
   const handleBuyNow = () => {
     onAdd(product, qty);
@@ -49,6 +49,9 @@ const ProductDetails = ({ product, products }) => {
   }
 
 
+
+
+
   return (
     <div>
       <div className="product-detail-container">
@@ -75,6 +78,7 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">${price}</p>
+          <p className="size"> <br></br> {size}</p>
           <div className="quantity">
           <h3>Quantity:</h3>
             <p className="quantity-desc">
@@ -85,21 +89,23 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <p className="product-name">{soldout}</p>
 
-          <div className="buttons">
+          <div className="buttons buttonsNext">
 
-            <button event id="purch" type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
+            <button event id="purchNext"  type="button" className="add-to-cart" onClick={() => onAdd(product, qty)}>Add to Cart</button>
 
-            <button event id="purch" type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+            <button event id="purchNext"  type="button" className="buy-now" onClick={handleBuyNow}>Buy Now</button>
 
           </div>
         </div>
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2 > Fitable goods  </h2>
-          <span className='fitIt'> Designs with limited production belongs to idea of creating unrepeatable things for our customers</span>
           <br></br>
-          <span className='fitIt'> We respect the identity and distribute thoughts via our clothes.</span>
+          <span className='fitIt'> Garrment, designs, visualization expression - all is cool , but what about idea behind that?  </span>
+          <br></br>
+          <span className='fitIt'> We pass thoughts through the brand, this is the only way when the cost of everything begins to be measured.</span>
+          <br></br>
+          <span className='fitIt'>We respect the identity of distribution, but also focusing on plot behind it. </span>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
