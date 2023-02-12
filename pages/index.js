@@ -6,20 +6,22 @@ import { client } from '../lib/client';
 import { Navbar, Product, FooterBanner, HeroBanner } from '../components';
 
 
+
 const Home = ({ products, bannerData, logoData}) => (
 
+  
 
   <div>
     
     {/* <Navbar logoNav={logoData.length && logoData[0]}  /> */}
     {/* <Navbar navBar={logoData && logoData[0]} /> */}
 
-
+  <div>
     <FooterBanner footerBanner={bannerData && bannerData[0]} />
-    
+  </div>
     <div className="products-heading">
-      <h2>Best Seller</h2>
-      <p> Check the full collection </p>
+      <h2>CYBER WORLD </h2>
+      <p> UPCOMING COLLECTION </p>
     </div>
 
     <div className="products-container">
@@ -50,6 +52,8 @@ export const getServerSideProps = async () => {
     props: { products, bannerData, logoData}
   }
 }
- 
 
 export default Home;
+
+
+
