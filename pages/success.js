@@ -24,13 +24,6 @@ const Success = () => {
       <div className="success">
 
 
-        <Link className="logo-suc" href='/'>
-          <div>
-            <Image className="logo-class"
-              src={logo} alt="logo-g"
-            />
-          </div>
-        </Link>
 
 
         <h2>Thanx for your order!</h2>
