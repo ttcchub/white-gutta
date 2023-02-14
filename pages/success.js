@@ -23,18 +23,14 @@ const Success = () => {
     <div className="success-wrapper">
       <div className="success">
 
-
-
-
         <h2 className="thanx-msg" >Thanx for your order!</h2>
-        <p className="email-msg">After purchase, we will start shipping shortly.</p>
-        <p className="description">Please be patient while waiting for your order. Check your mailbox from time to time for updates.If you have any questions, please email us
+        <p className="email-msg description">After purchase, we will start shipping shortly. Please be patient while waiting for your order. Check your mailbox from time to time for the updates. If you have any questions, please send email us
           <a className="email" href="mailto:guttastore@protonmail.com">
             guttastore@proton.com
           </a>
         </p>
         <Link href="/">
-          <button type="button" width="300px" className="btn">
+        <button type="button" width="300px" className="btn">
             BACK
           </button>
         </Link>
