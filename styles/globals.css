@@ -30,7 +30,7 @@ width: 100%;
 
 /* answer on 404 page as well */
 .layout{
-  background: rgb(34, 34, 41);
+  background: rgb(45, 45, 53);
   color: #ffffff;
   padding: 10px;
 }
@@ -84,19 +84,11 @@ width: 100%;
 }
 .logo-suc{
 padding-bottom: 80px;
-color: white;
-}
-.success .thanx-msg{
-  
-padding-top: 100px;
-padding-bottom: 80px;
-color: white;
 }
 .logo-class{
   height: 30px;
   width: auto;
   cursor: pointer;
-  padding-left: 640px;
 }
 .logo-class-success{
   height: 40px;
@@ -121,7 +113,7 @@ color: white;
   right: 32px;
   font-size: 15px;
   color: black;
-  background-color: #1bff7a;
+  background-color: #fff71b;
   width: 35px;
   height: 25px;
   border-radius: 22%;
@@ -134,46 +126,26 @@ color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px;
   margin-top: 100px;
+  margin-bottom: 50px;
   width: 100%;
-  gap: 5px;
-
 }
 
 .product-card{
  cursor: pointer;
   color: #676632;
   background-color: #1bff7a;
-  border-radius: 0px;
+  border-radius:15px;
   font-family: 'Unbounded', cursive;
-  cursor: pointer;
-  transition: all .2s ease-in-out; 
-  scale: 100%;
-  gap: 10px;
-}
-.product-card:hover{
- cursor: pointer;
-  color: #676632;
-
-  font-family: 'Unbounded', cursive;
-
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
 .product-image{
-  border-radius:  0px;
+  border-radius: 15px;
   background-color: #ebebeb;
   cursor: pointer;
-  transition: all .2s ease-in-out; 
-  scale: 100%;
-
-}
-.product-image:hover{
-
-  background-color: #ebebeb;
-  cursor: pointer;
-
-
 }
 
 .product-name{
@@ -291,7 +263,7 @@ text-align: end;
 /* footer banner */
 .footer-banner-container{
   padding: 100px 40px;
-
+  background-color: #111111;
   rotate: 0deg;
   border-radius: 50px;
   position: relative;
@@ -347,11 +319,12 @@ text-align: end;
 
 }
 .footer-banner-image{
+
   /* top: -35%;
   left: 8%; */
-  top: -5%;
+  top: 5%;
   left: 18%;
-  scale: 102%;
+
   position: absolute;
 }
 
@@ -552,15 +525,17 @@ padding: 20px 10px;
 }
 .product{
   display: flex;
+ gap: 30px;
   padding: 20px;
 }
 .product .cart-product-image{
   width:180px ;
   height: 150px;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: #ebebeb;
+  margin-left: 20px
+;
 }
-
 .item-desc .flex{
   display: flex;
   justify-content: space-between;
@@ -574,8 +549,10 @@ padding: 20px 10px;
 }
 .flex h5{
   font-size: 24px;
+  color: white;
 }
 .flex h4{
+  color: white;
   font-size: 20px;
 }
 .total{
@@ -652,7 +629,8 @@ padding: 30px 65px;
   transition: .3s ease-in-out;
 }
 .product-detail-image:hover{
-  background-color: #ffffff;
+  background-color: #f32551;
+
 }
 .small-images-container{
   display: flex;
@@ -882,7 +860,7 @@ padding: 30px 65px;
 .maylike-products-container{
   display: flex;
   justify-content: center;
-  gap: 5px;;
+  gap: 15px;;
   bottom: 20px;
   font-family: 'Unbounded', cursive;
 }
@@ -892,7 +870,6 @@ padding: 30px 65px;
   top: 22px;
   left: 100px;
   color: #000000;
-  margin: 12px;
 
 }
 
@@ -908,9 +885,10 @@ padding: 30px 65px;
 }
 .success, .cancel{
   width: 1000px;
-  margin: auto;
+margin: auto;
+margin-top: 160px;
 
-
+  padding: 50px;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -933,7 +911,6 @@ padding: 30px 65px;
    font-size: 16px;
   font-weight: 600;
   text-align: center;
-
 }
 .cancel p{
   font-size: 20px;
@@ -943,14 +920,12 @@ padding: 30px 65px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-
-
+  margin: 10px;
+  margin-top: 30px;
 }
 .success .description .email{
   margin-left: 5px;
   color: #f02d34;
-  text-align: center;
-
 }
 .product-max-qty{
   margin-top: 10px;
@@ -960,7 +935,7 @@ padding: 30px 65px;
   .main-container{
     max-width: auto; 
     margin: auto;
-    width: 100%;
+    width: 98%;
     }
     
   .hero-banner-container{
@@ -993,10 +968,6 @@ padding: 30px 65px;
   
   }
   
-  .banner-desc .left .bannerHeadline{
-    padding-top:15px;
-
-  }
   .banner-desc .left .bannerP{
     top:-200px;
     font-size: 15px;
@@ -1061,23 +1032,10 @@ padding: 30px 65px;
   .product-detail-container .product-detail-image{
     width: 350px;
     height: 350px;
-    scale: 95%;
   }
   .cart-container{
     width: 415px;
     padding: 4px;
-  }
-  
-  .logo-class{
-    height: 30px;
-    width: auto;
-    cursor: pointer;
-    padding-left: 2px;
-  }
-  .logo-class-success{
-    height: 40px;
-    width: auto;
-    margin-bottom: 50px;
   }
 
   .product-container{
@@ -1103,27 +1061,16 @@ padding: 30px 65px;
     margin: 20px;
   }
 
-  .maylike-products-wrapper .fitIt{
-    scale: 20%;
-  }
 
   .product-card .product-size {
     position: relative;
     text-align: center;
 
 
-
     color: #000000;
    }
    
-   .footer-banner-image{
-    /* top: -35%;
-    left: 8%; */
-    top: -5%;
-    left: 18%;
-    scale: 142%;
-    position: absolute;
-  }
+
 
 .item-desc .flex{
   width: 200px;
@@ -1137,11 +1084,13 @@ padding: 30px 65px;
 }
 .flex h5{
   font-size: 16px;
-   color: #324d67;
+  color: white;
+
 }
 .flex h4{
   font-size: 16px;
-   color: black;
+  color: white;
+
 }
 .cart-bottom{
   padding: 30px;
@@ -1190,7 +1139,7 @@ padding: 30px 65px;
   width: 155px;
   align-items: center;
   appearance: none;
-  background-color: #ebc8cf;
+  background-color: #fffb00;
   border-radius: 15px;
   border-color: transparent;
   border-width: 0;
