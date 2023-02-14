@@ -933,6 +933,7 @@ padding: 30px 65px;
    font-size: 16px;
   font-weight: 600;
   text-align: center;
+
 }
 .cancel p{
   font-size: 20px;
@@ -942,12 +943,14 @@ padding: 30px 65px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  margin: 10px;
-  margin-top: 30px;
+
+
 }
 .success .description .email{
   margin-left: 5px;
   color: #f02d34;
+  text-align: center;
+
 }
 .product-max-qty{
   margin-top: 10px;
