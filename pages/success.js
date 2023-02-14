@@ -26,7 +26,7 @@ const Success = () => {
 
 
 
-        <h2>Thanx for your order!</h2>
+        <h2 className="thanx-msg" >Thanx for your order!</h2>
         <p className="email-msg">After purchase, we will start shipping shortly.</p>
         <p className="description">Please be patient while waiting for your order. Check your mailbox from time to time for updates.If you have any questions, please email us
           <a className="email" href="mailto:guttastore@protonmail.com">
