@@ -136,14 +136,14 @@ padding-bottom: 80px;
  cursor: pointer;
   color: #676632;
   background-color: #1bff7a;
-  border-radius:15px;
+
   font-family: 'Unbounded', cursive;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 .product-image{
-  border-radius: 15px;
+
   background-color: #ebebeb;
   cursor: pointer;
 }
@@ -531,7 +531,7 @@ padding: 20px 10px;
 .product .cart-product-image{
   width:180px ;
   height: 150px;
-  border-radius: 20px;
+
   background-color: #ebebeb;
   margin-left: 20px
 ;
