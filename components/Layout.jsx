@@ -10,7 +10,7 @@ import  gif from '../public/styles/giv.gif';
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
+    <div src={gif} className="gif">
       <Head>
       </Head>
       <header>
