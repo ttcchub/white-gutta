@@ -20,8 +20,10 @@ const Home = ({ products, bannerData, logoData}) => (
     <FooterBanner footerBanner={bannerData && bannerData[0]} />
   </div>
     <div className="products-heading">
-      <h2>CYBER WORLD </h2>
-      <p> UPCOMING COLLECTION </p>
+      <article>
+        <h2>CYBER WORLD </h2>
+        <p> UPCOMING COLLECTION </p>
+      </article>
     </div>
 
     <div className="products-container">
