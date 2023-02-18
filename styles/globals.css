@@ -915,7 +915,10 @@ padding: 30px 65px;
   text-align: left;
 } 
 
-
+.footer-container .instagram hover{
+  color: rgb(0, 255, 123);
+  transform: scale(110%); 
+  }
 
 .max-qty{
   font-weight: 500;
