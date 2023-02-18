@@ -4,7 +4,21 @@
   color: black;
 }
 
-
+article {
+  /*  leverage cascade for cross-browser gradients  */
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(322, 100%, 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(343, 100%, 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+} 
 
 html, * {
   padding: 0;
@@ -30,9 +44,13 @@ width: 100%;
 
 /* answer on 404 page as well */
 .layout{
-  background: rgb(28, 28, 34);
   color: #ffffff;
   padding: 10px;
+  background: url('../pages/styles/giv.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .navbar-container{
@@ -77,6 +95,7 @@ width: 100%;
     -webkit-text-stroke: 1px #f02d34;
     margin-left: 6px;
 }
+
 .logo{
   color: gray;
   font-size: 18px;
@@ -84,11 +103,16 @@ width: 100%;
 }
 .logo-suc{
 padding-bottom: 80px;
+color: white;
+}
+.success .thanx-msg{
+padding-top: 50px;
+padding-bottom: 80px;
+color: white;
 }
 .logo-class{
   height: 30px;
   width: auto;
-  cursor: pointer;
 }
 .logo-class-success{
   height: 40px;
@@ -113,7 +137,7 @@ padding-bottom: 80px;
   right: 32px;
   font-size: 15px;
   color: black;
-  background-color: #fff71b;
+  background-color: #1bff7a;
   width: 35px;
   height: 25px;
   border-radius: 22%;
@@ -126,28 +150,54 @@ padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 100%;
+  gap: 2px;
+  /* background-color: #ffffff8e; */
+  border-radius: 50px;
+
+
 }
 
 .product-card{
  cursor: pointer;
   color: #676632;
-  background-color: #1bff7a;
-
+  background-color: #ffffff7a;
+  border-radius: 15px;
   font-family: 'Unbounded', cursive;
-  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  scale: 100%;
+}
+.product-card:hover{
+  cursor: pointer;
+  color: #676632;
+  background-color: #1bff7a;
+  font-family: 'Unbounded', cursive;
   cursor: pointer;
 }
 
 .product-image{
+  border-radius: 15px;
+  background-color: #ebebeb;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  scale: 100%;
+
+}
+.product-image:hover{
 
   background-color: #ebebeb;
   cursor: pointer;
-}
 
+
+}
+.fitIt{
+  color: white;
+}
 .product-name{
   text-align: center;
   font-size: 20px;
@@ -263,7 +313,6 @@ text-align: end;
 /* footer banner */
 .footer-banner-container{
   padding: 100px 40px;
-
   rotate: 0deg;
   border-radius: 50px;
   position: relative;
@@ -272,6 +321,7 @@ text-align: end;
   color: white;
   width: 100%;
   margin-top: 20px;
+  /* margin-bottom: 1220px; */
 }
 
 .banner-desc{
@@ -319,12 +369,11 @@ text-align: end;
 
 }
 .footer-banner-image{
-
   /* top: -35%;
   left: 8%; */
-  top: 5%;
+  top: -5%;
   left: 18%;
-
+  scale: 102%;
   position: absolute;
 }
 
@@ -404,6 +453,26 @@ text-align: end;
   position: relative;
   
 }
+.footer-container .contacts p , a{
+  font-size: 80px;
+  text-align: left;
+} 
+.footer-container .contacts a:hover{
+  font-size: 80px;
+  text-align: left;
+  color: rgb(0, 255, 123);
+} 
+.footer-container .contacts instagram{
+  font-size: 80px;
+  text-align: left;
+} 
+.footer-container .contacts .instagram :hover{
+  color: rgb(0, 255, 123);
+  transform: scale(110%); 
+  font-size: 80px;
+  text-align: left;
+} 
+
 
 .footer-container{
   color: #d3d3d3;
@@ -418,18 +487,19 @@ text-align: end;
   font-size: 23;
 }
 
-.footer-container .icons{
+.footer-container  {
   font-size: 25px;
+  text-align: left;
   display: flex;
   gap: 60px;
-  color: #1bff7a;
+  color: #ffffff;
   margin-bottom: 50px;
   transition: all .2s ease-in-out; 
   scale: 100%;
 
 
 }
-.footer-container .icons:hover{
+.footer-container .instagram hover{
   color: rgb(0, 255, 123);
   transform: scale(110%); 
   }
@@ -525,17 +595,15 @@ padding: 20px 10px;
 }
 .product{
   display: flex;
- gap: 30px;
   padding: 20px;
 }
 .product .cart-product-image{
   width:180px ;
   height: 150px;
-
+  border-radius: 50px;
   background-color: #ebebeb;
-  margin-left: 20px
-;
 }
+
 .item-desc .flex{
   display: flex;
   justify-content: space-between;
@@ -549,10 +617,8 @@ padding: 20px 10px;
 }
 .flex h5{
   font-size: 24px;
-  color: white;
 }
 .flex h4{
-  color: white;
   font-size: 20px;
 }
 .total{
@@ -629,8 +695,7 @@ padding: 30px 65px;
   transition: .3s ease-in-out;
 }
 .product-detail-image:hover{
-  background-color: #f32551;
-
+  background-color: #ffffff;
 }
 .small-images-container{
   display: flex;
@@ -702,6 +767,15 @@ padding: 30px 65px;
 
 
 }
+.video {   
+  object-fit: cover;   
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1; 
+
+}
+
 .quantity h3{
   font-family: 'Unbounded', cursive;
   display: flex;
@@ -827,15 +901,18 @@ padding: 30px 65px;
 
 }
 
+.maylike-products-wrapper .fitIt{
+  color: #1bff7a;
+}
 
 .maylike-products-wrapper{
+  color: white;
   margin-top: 40px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   font-family: 'Unbounded', cursive;
-
 }
 
 .maylike-products-wrapper span {
@@ -860,7 +937,7 @@ padding: 30px 65px;
 .maylike-products-container{
   display: flex;
   justify-content: center;
-  gap: 15px;;
+  gap: 5px;;
   bottom: 20px;
   font-family: 'Unbounded', cursive;
 }
@@ -870,6 +947,7 @@ padding: 30px 65px;
   top: 22px;
   left: 100px;
   color: #000000;
+  margin: 12px;
 
 }
 
@@ -885,10 +963,9 @@ padding: 30px 65px;
 }
 .success, .cancel{
   width: 1000px;
-margin: auto;
-margin-top: 160px;
+  margin: auto;
 
-  padding: 50px;
+
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -911,6 +988,7 @@ margin-top: 160px;
    font-size: 16px;
   font-weight: 600;
   text-align: center;
+
 }
 .cancel p{
   font-size: 20px;
@@ -920,12 +998,14 @@ margin-top: 160px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  margin: 10px;
-  margin-top: 30px;
+
+
 }
 .success .description .email{
   margin-left: 5px;
   color: #f02d34;
+  text-align: center;
+
 }
 .product-max-qty{
   margin-top: 10px;
@@ -935,7 +1015,7 @@ margin-top: 160px;
   .main-container{
     max-width: auto; 
     margin: auto;
-    width: 98%;
+    width: 100%;
     }
     
   .hero-banner-container{
@@ -968,6 +1048,10 @@ margin-top: 160px;
   
   }
   
+  .banner-desc .left .bannerHeadline{
+    padding-top:15px;
+
+  }
   .banner-desc .left .bannerP{
     top:-200px;
     font-size: 15px;
@@ -1032,10 +1116,23 @@ margin-top: 160px;
   .product-detail-container .product-detail-image{
     width: 350px;
     height: 350px;
+    scale: 95%;
   }
   .cart-container{
     width: 415px;
     padding: 4px;
+  }
+  
+  .logo-class{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    padding-left: 2px;
+  }
+  .logo-class-success{
+    height: 40px;
+    width: auto;
+    margin-bottom: 50px;
   }
 
   .product-container{
@@ -1061,16 +1158,27 @@ margin-top: 160px;
     margin: 20px;
   }
 
+  .maylike-products-wrapper .fitIt{
+    scale: 20%;
+  }
 
   .product-card .product-size {
     position: relative;
     text-align: center;
 
 
+
     color: #000000;
    }
    
-
+   .footer-banner-image{
+    /* top: -35%;
+    left: 8%; */
+    top: -5%;
+    left: 18%;
+    scale: 142%;
+    position: absolute;
+  }
 
 .item-desc .flex{
   width: 200px;
@@ -1084,13 +1192,11 @@ margin-top: 160px;
 }
 .flex h5{
   font-size: 16px;
-  color: white;
-
+   color: #324d67;
 }
 .flex h4{
   font-size: 16px;
-  color: white;
-
+   color: black;
 }
 .cart-bottom{
   padding: 30px;
@@ -1102,6 +1208,9 @@ margin-top: 160px;
 .track {
   animation: marquee 10s linear infinite;
   width: 550%;
+}
+.success-wrapper .success{
+  padding-top: 20px;
 }
 .success-wrapper, .cancel-wrapper{
 
@@ -1128,6 +1237,11 @@ margin-top: 160px;
   margin-top: 40px ;
 }
 
+.maylike-products-wrapper .fitIt{
+  color: #1bff7a;
+
+  font-size: small;
+}
 
 }
 
@@ -1139,7 +1253,7 @@ margin-top: 160px;
   width: 155px;
   align-items: center;
   appearance: none;
-  background-color: #fffb00;
+  background-color: #ebc8cf;
   border-radius: 15px;
   border-color: transparent;
   border-width: 0;
