@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-
+import  '../styles/giv.gif'
 
 
 const Layout = ({ children }) => {
