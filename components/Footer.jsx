@@ -11,9 +11,6 @@ const Footer = () => {
       </div>  
       <p> </p>
       <p> </p>
-      <a href='https://www.instagram.com/gutta.cc/' target="_blank" rel="noreferrer" className="icons"  >
-        <AiFillInstagram />
-      </a>
     </div>
   )
 }
