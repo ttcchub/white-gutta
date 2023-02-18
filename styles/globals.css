@@ -51,12 +51,17 @@ width: 100%;
 .layout{
   color: #ffffff;
   padding: 10px;
+}
 
-  background: url('../public/styles/giv.gif');
+.gif{
+  position: absolute;
+  padding-left: -20px;
+  z-index: 0;
+  background-color: #000000;
+  background: url('../styles/giv.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 2;
 }
 
 .navbar-container{
