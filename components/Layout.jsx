@@ -11,11 +11,6 @@ import  gif from '../public/styles/giv.gif';
 
 const Layout = ({ children }) => {
   return (
-          <div>
-          <Image className="gif"
-            src={gif} alt="gif-g"
-          />
-        </div>
     <div src={gif} className="gif">
       <Head>
       </Head>
