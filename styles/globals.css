@@ -20,6 +20,12 @@ article {
   text-align: center;
 } 
 
+html{
+  background-color: #b7b9d9;
+  scroll-behavior: smooth;
+}
+
+
 html, * {
   padding: 0;
   margin: 0;
@@ -28,6 +34,7 @@ html, * {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 
+  z-index: 1;
 }
 
 a {
@@ -46,9 +53,22 @@ width: 100%;
 .layout{
   color: #ffffff;
   padding: 10px;
-    background-color: #000000;
+  /* background-image: url('../public/styles/giv.gif'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/*   background: url('../pages/styles/giv.gif'); */
+.gif{
+  margin-top: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  scale: 82%;
+  padding: -50px;
+  z-index: 0;
+  background-color: #000000;
+  /* background: url('../styles/giv.gif'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -145,21 +165,37 @@ padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
+  align-content: center;
+  gap: 2px;
+  background-color: #1bff7a;
+  border-radius: 30px;
+  color:  #ff285ee4;
 }
+
 
 .product-card{
  cursor: pointer;
   color: #676632;
-  background-color: #1bff7a;
-
+  background-color: #ffffff7a;
+  border-radius: 15px;
   font-family: 'Unbounded', cursive;
-  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  scale: 95%;
+}
+.product-card:hover{
+  cursor: pointer;
+  color: #676632;
+  background-color: #1bff7a;
+  font-family: 'Unbounded', cursive;
   cursor: pointer;
 }
+
 
 .product-image{
 
@@ -282,16 +318,18 @@ text-align: end;
 /* footer banner */
 .footer-banner-container{
   padding: 100px 40px;
-
   rotate: 0deg;
   border-radius: 50px;
   position: relative;
   height: 400px;
   line-height: 1; 
-  color: white;
+  color:  #00ff95;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
+  z-index: 2;
+  /* margin-bottom: 1220px; */
 }
+
 
 .banner-desc{
   display: flex ;
@@ -423,6 +461,16 @@ text-align: end;
   position: relative;
   
 }
+.footer-container .contacts p , a{
+  font-size: 80px;
+  text-align: left;
+} 
+.footer-container .contacts a:hover{
+  font-size: 80px;
+  text-align: left;
+  color: rgb(0, 255, 123);
+} 
+
 
 .footer-container{
   color: #d3d3d3;
@@ -437,18 +485,19 @@ text-align: end;
   font-size: 23;
 }
 
-.footer-container .icons{
+.footer-container  {
   font-size: 25px;
+  text-align: left;
   display: flex;
   gap: 60px;
-  color: #1bff7a;
+  color: #ffffff;
   margin-bottom: 50px;
   transition: all .2s ease-in-out; 
   scale: 100%;
 
 
 }
-.footer-container .icons:hover{
+.footer-container .instagram hover{
   color: rgb(0, 255, 123);
   transform: scale(110%); 
   }
@@ -915,7 +964,10 @@ padding: 30px 65px;
   text-align: left;
 } 
 
-
+.footer-container .instagram hover{
+  color: rgb(0, 255, 123);
+  transform: scale(110%); 
+  }
 
 .max-qty{
   font-weight: 500;
