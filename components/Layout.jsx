@@ -13,15 +13,16 @@ const Layout = ({ children }) => {
   return (
     <div src={gif} className="gif">
       <Head>
+        <header>
+          <Navbar />
+        </header>
       </Head>
 //       <div>
 //           <Image className=""
 //             src={gif} alt="gif-g"
 //           />
 //         </div>
-      <header>
-        <Navbar />
-      </header>
+ 
       <main className="main-container">
         {children}
       </main>
