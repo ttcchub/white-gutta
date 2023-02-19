@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import  '../styles/giv.gif'
+
 import { client } from '../lib/client';
 
 import { Navbar, Product, FooterBanner, HeroBanner } from '../components';
