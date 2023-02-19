@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils';
 
-import logo from '../public/styles/G*logo.png';
+import logo from '../public/styles/logo.png';
 import Image from 'next/image'
 
 const Success = () => {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
-  
+
   useEffect(() => {
     localStorage.clear();
     setCartItems([]);
@@ -24,12 +24,11 @@ const Success = () => {
       <div className="success">
 
         <h2 className="thanx-msg" >Thanx for your order!</h2>
-        <p className="email-msg description">After purchase, we will start shipping shortly. Please be patient while waiting for your order. Check your mailbox from time to time for the updates. If you have any questions, please send us email </p>
-        <br>
-        </br>
-        <a className="email" href="mailto:guttastore@protonmail.com">
+        <p className="email-msg description">After purchase, we will start shipping shortly. Please be patient while waiting for your order. Check your mailbox from time to time for the updates. If you have any questions, please send email us
+          <a className="email" href="mailto:guttastore@protonmail.com">
             guttastore@proton.com
           </a>
+        </p>
         <Link href="/">
         <button type="button" width="300px" className="btn">
             BACK
@@ -39,5 +38,4 @@ const Success = () => {
     </div>
   )
 }
-
 export default Success
