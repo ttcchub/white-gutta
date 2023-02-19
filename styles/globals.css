@@ -121,16 +121,26 @@ padding-bottom: 80px;
   font-weight: 600;
   padding-top: 3px;
 }
-
 .products-container{
+  /* position: absolute; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 50px;
-  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 75px;
+  width: auto;
+  align-content: center;
+  scale: 98%;
+  background-color: #1bff7a;
+  border-radius: 20px;
+  color:  #ff285ee4;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  margin-left: 10px;
 }
+
 
 .product-card{
  cursor: pointer;
@@ -398,11 +408,10 @@ text-align: end;
   height: 100vh;
   width: 600px;
   color: #dcdcdc;
-  background-color: rgb(27, 27, 27);
+  background-color: rgba(239, 0, 60, 0.54);
   float: right;
-
+  z-index: 100;
   position: relative;
-  
 }
 
 .footer-container{
