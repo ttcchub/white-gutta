@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import  gif from '../public/styles/giv.gif';
+// import  gif from '../public/styles/giv.gif';
 
 
 const Layout = ({ children }) => {
@@ -14,11 +14,11 @@ const Layout = ({ children }) => {
     <div src={gif} className="gif">
       <Head>
       </Head>
-      <div>
-          <Image className=""
-            src={gif} alt="gif-g"
-          />
-        </div>
+//       <div>
+//           <Image className=""
+//             src={gif} alt="gif-g"
+//           />
+//         </div>
       <header>
         <Navbar />
       </header>
