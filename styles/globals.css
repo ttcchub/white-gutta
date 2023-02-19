@@ -19,6 +19,7 @@ article {
   -webkit-text-fill-color: transparent;
   text-align: center;
 } 
+
 html{
   background-color: #b7b9d9;
   scroll-behavior: smooth;
@@ -325,8 +326,10 @@ text-align: end;
   color:  #00ff95;
   width: 100%;
   margin-top: 40px;
+  z-index: 2;
   /* margin-bottom: 1220px; */
 }
+
 
 .banner-desc{
   display: flex ;
