@@ -667,14 +667,14 @@ padding: 30px 65px;
   background-color: #545454;
   color: #ffffff;
 }
-.padding-top: 100px;
+.product-detail-container{
+  padding-top: 100px;
   display: flex;
   gap: 40px;
   padding-left: 220px;
   color: rgb(89, 255, 100) ;
   font-family: 'Unbounded', cursive;
 }
-
 .product-detail-image{
   border-radius: 15px;
    background-color: #ebebeb;
