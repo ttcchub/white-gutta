@@ -8,12 +8,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import  gif from '../public/styles/giv.gif';
 
-
-
-
 const Layout = ({ children }) => {
   return (
-    <div className="layout">
+    <div className="gif">
       <Head>
 
       <div>
