@@ -1,29 +1,36 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 
 import Image from 'next/image'
+
 
 import Navbar from './Navbar';
 import Footer from './Footer';
 import  gif from '../public/styles/giv.gif';
 
 
+
+
 const Layout = ({ children }) => {
   return (
-    <div src={gif} className="gif">
+    <div className="layout">
       <Head>
-      </Head>
+
       <div>
-          <Image className=""
+          <Image className="gif"
             src={gif} alt="gif-g"
           />
         </div>
+
+      </Head>
       <header>
         <Navbar />
       </header>
       <main className="main-container">
         {children}
+
+     
+
       </main>
       <footer>
         <Footer />
