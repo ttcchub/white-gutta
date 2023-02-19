@@ -860,7 +860,7 @@ padding: 30px 65px;
   color: #ffffff;
 }
 .quantity-desc{
-  border: 1px solid gray;
+  border: 1px solid rgb(34, 255, 107);
   border-radius: 10px;
   padding: 6px;
 }
@@ -870,11 +870,11 @@ padding: 30px 65px;
   cursor: pointer;
 }
 .quantity-desc .minus{
-  border-right: 1px solid gray;
+  border-right: 1px solidrgb(34, 255, 107);
   color: #1bff7a;
 }
 .quantity-desc .num{
-  border-right: 1px solid gray;
+  border-right: 1px solidrgb(34, 255, 107);
   font-size: 20px;
   padding-left: 25px;
   color: #1bff7a;
@@ -883,7 +883,6 @@ padding: 30px 65px;
 .quantity-desc .plus{
   color: #1bff7a;
   scale: 80%;
-
 }
 
 
