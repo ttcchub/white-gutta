@@ -99,13 +99,15 @@ const ProductDetails = ({ product, products }) => {
         </div>
       </div>
 
+      <div className='somethingabout'>
+            <br></br>
+            <span className='fitIt'>Garrment, designs, visualization expression - all is cool , but what about idea behind that?  </span>
+            <br></br>
+            <span className='fitIt'> We passes thoughts through the brand, that's the only way the things survive for us.</span>
+            <br></br>
+            <span className='fitIt'>We respect the identity distribution, but also focusing on plot behind. </span>
+      </div>
       <div className="maylike-products-wrapper">
-          <br></br>
-          <span className='fitIt'> Garrment, designs, visualization expression - all is cool , but what about idea behind that?  </span>
-          <br></br>
-          <span className='fitIt'> We pass thoughts through the brand, this is the only way when the cost of everything begins to be measured.</span>
-          <br></br>
-          <span className='fitIt'>We respect the identity of distribution, but also focusing on plot behind it. </span>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
