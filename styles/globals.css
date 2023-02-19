@@ -19,11 +19,11 @@ article {
   -webkit-text-fill-color: transparent;
   text-align: center;
 } 
-
 html{
-  background-color: #000000;
-
+  background-color: #b7b9d9;
+  scroll-behavior: smooth;
 }
+
 
 html, * {
   padding: 0;
@@ -33,6 +33,7 @@ html, * {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 
+  z-index: 1;
 }
 
 a {
@@ -51,6 +52,10 @@ width: 100%;
 .layout{
   color: #ffffff;
   padding: 10px;
+  /* background-image: url('../public/styles/giv.gif'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .gif{
@@ -320,7 +325,6 @@ text-align: end;
   color:  #00ff95;
   width: 100%;
   margin-top: 40px;
-  z-index: 2;
   /* margin-bottom: 1220px; */
 }
 
