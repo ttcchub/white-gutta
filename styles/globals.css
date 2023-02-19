@@ -145,10 +145,18 @@ padding-bottom: 80px;
 .product-card{
  cursor: pointer;
   color: #676632;
-  background-color: #1bff7a;
-
+  background-color: #ffffff7a;
+  border-radius: 15px;
   font-family: 'Unbounded', cursive;
-  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  scale: 95%;
+}
+.product-card:hover{
+  cursor: pointer;
+  color: #676632;
+  background-color: #1bff7a;
+  font-family: 'Unbounded', cursive;
   cursor: pointer;
 }
 
