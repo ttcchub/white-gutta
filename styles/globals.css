@@ -792,7 +792,7 @@ padding: 30px 65px;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
-  background-color: #737373;
+  background-color: #dddddd;
   color: #000000;
   cursor: pointer;
   width: 200px;
@@ -809,6 +809,7 @@ padding: 30px 65px;
   color: #000000;
 
 }
+
 
 
 
@@ -835,7 +836,7 @@ padding: 30px 65px;
   font-family: 'Unbounded', cursive;
 
   padding: 10px 20px;
-  background-color: #1e1e1e;
+  background-color: #555555;
   border-radius: 10px;
   border: 0.5px solid black ;
   color: white;
