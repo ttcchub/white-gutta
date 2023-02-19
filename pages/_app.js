@@ -1,6 +1,6 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
-import  '../styles/giv.gif'
+
 import { Layout } from '../components';
 import '../styles/globals.css';
 import { StateContext } from '../context/StateContext';
