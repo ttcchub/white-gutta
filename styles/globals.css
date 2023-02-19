@@ -21,10 +21,9 @@ article {
 } 
 
 html{
-  background-color: #b7b9d9;
-  scroll-behavior: smooth;
-}
+  background-color: #000000;
 
+}
 
 html, * {
   padding: 0;
@@ -34,7 +33,6 @@ html, * {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
 
-  z-index: 1;
 }
 
 a {
@@ -53,22 +51,14 @@ width: 100%;
 .layout{
   color: #ffffff;
   padding: 10px;
-  /* background-image: url('../public/styles/giv.gif'); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .gif{
-  margin-top: 30px;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  scale: 82%;
-  padding: -50px;
+  padding-left: -20px;
   z-index: 0;
   background-color: #000000;
-  /* background: url('../styles/giv.gif'); */
+  background: url('../styles/giv.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -165,37 +155,21 @@ padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 80px;
+  gap: 15px;
+  margin-top: 100px;
   margin-bottom: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   width: 100%;
-  align-content: center;
-  gap: 2px;
-  background-color: #1bff7a;
-  border-radius: 30px;
-  color:  #ff285ee4;
 }
-
 
 .product-card{
  cursor: pointer;
   color: #676632;
-  background-color: #ffffff7a;
-  border-radius: 15px;
-  font-family: 'Unbounded', cursive;
-  cursor: pointer;
-  transition: all .2s ease-in-out; 
-  scale: 95%;
-}
-.product-card:hover{
-  cursor: pointer;
-  color: #676632;
   background-color: #1bff7a;
+
   font-family: 'Unbounded', cursive;
+  margin-bottom: 10px;
   cursor: pointer;
 }
-
 
 .product-image{
 
@@ -318,18 +292,16 @@ text-align: end;
 /* footer banner */
 .footer-banner-container{
   padding: 100px 40px;
+
   rotate: 0deg;
   border-radius: 50px;
   position: relative;
   height: 400px;
   line-height: 1; 
-  color:  #00ff95;
+  color: white;
   width: 100%;
-  margin-top: 40px;
-  z-index: 2;
-  /* margin-bottom: 1220px; */
+  margin-top: 20px;
 }
-
 
 .banner-desc{
   display: flex ;
