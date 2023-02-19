@@ -987,6 +987,27 @@ margin-top: 160px;
   margin-top: 10px;
 }
 
+.somethingabout{
+  padding-top: 180px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.somethingabout .fitIt{
+  color:  rgb(28, 28, 28);
+  padding-bottom: 100px;
+  margin-top: 200px;
+  padding-top: 200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Unbounded', cursive;
+  font-size: 16px;
+}
+
 @media screen and (max-width:800px) {
   .main-container{
     max-width: auto; 
