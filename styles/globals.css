@@ -5,24 +5,6 @@
 }
 
 
-article {
-  /*  leverage cascade for cross-browser gradients  */
-  background: radial-gradient(
-    hsl(344, 100%, 51%), 
-    hsl(151, 100%, 50%) 
-
-    
-  ) fixed;
-  background: conic-gradient(
-    hsl(346, 100%, 50%), 
-    hsl(154, 100%, 50%), 
-    hsl(348, 100%, 50%) 
-  ) fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  z-index: 2;
-} 
 
 html, * {
   padding: 0;
@@ -159,7 +141,6 @@ padding-bottom: 80px;
   margin-left: 10px;
 }
 
-
 .product-card{
  cursor: pointer;
   color: #676632;
@@ -177,7 +158,6 @@ padding-bottom: 80px;
   font-family: 'Unbounded', cursive;
   cursor: pointer;
 }
-
 .product-image{
 
   background-color: #ebebeb;
@@ -279,34 +259,22 @@ text-align: end;
   /* color: black; */
   align-self: flex-end;
 }
-.\{
+.products-heading{
   text-align: center;
   margin-top: 165px ;
   color: #1bff7a;
   font-family: 'Unbounded', cursive;
 
 }
-.products-heading{
-  text-align: center;
-  margin-top: 120px ;
-  color: #1bff7a;
-  font-family: 'Unbounded', cursive;
-  z-index: 5;
-  position: relative;
-
-}
 .products-heading h2{
   font-size: 40px;
   font-weight: 800;
   font-family: 'Unbounded', cursive;
-  z-index: 5;
-
 }
 .products-heading p{
   font-size: 16px;
   font-weight: 200;
   font-family: 'Unbounded', cursive;
-  z-index: 5;
 }
 /* footer banner */
 .footer-banner-container{
@@ -452,6 +420,10 @@ text-align: end;
   position: relative;
 }
 
+
+
+
+
 .footer-container{
   color: #d3d3d3;
   text-align: center;
@@ -465,18 +437,58 @@ text-align: end;
   font-size: 23;
 }
 
-.footer-container .icons{
-  font-size: 25px;
+.footer-container {
+  font-size: 80px;
+  text-align: left;
+  color: rgb(255, 0, 81);
+
+} 
+.footer-container .contacts p , a{
+
+  font-size: 80px;
+  text-align: left;
+  color: rgb(255, 0, 81);
+
+} 
+
+.footer-container .contacts a:hover{
+  font-size: 80px;
+  text-align: left;
+  color: rgb(0, 255, 123);
+} 
+/* .footer-container .contacts instagram{
+  font-size: 80px;
+  text-align: left;
+}  */
+.footer-container .contacts .instagram :hover{
+  color: rgb(0, 255, 123);
+  transform: scale(110%); 
+  font-size: 80px;
+  text-align: left;
+} 
+
+
+.footer-container{
+  color: #d3d3d3;
+  text-align: center;
+  font-weight: 100;
   display: flex;
-  gap: 60px;
-  color: #1bff7a;
-  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 23;
+}
+
+.footer-container  {
+  font-size: 25px;
+  text-align: left;
+  display: flex;
+  gap: 30px;
+  color: #ffffff;
   transition: all .2s ease-in-out; 
   scale: 100%;
-
-
 }
-.footer-container .icons:hover{
+.footer-container .instagram hover{
   color: rgb(0, 255, 123);
   transform: scale(110%); 
   }
