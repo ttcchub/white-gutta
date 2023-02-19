@@ -667,15 +667,12 @@ padding: 30px 65px;
   background-color: #545454;
   color: #ffffff;
 }
-.product-detail-container{
+.padding-top: 100px;
   display: flex;
- gap: 40px;
- margin: 40px;
- margin-top: 60px;
- color: #324d67;
- font-family: 'Unbounded', cursive;
-
-
+  gap: 40px;
+  padding-left: 220px;
+  color: rgb(89, 255, 100) ;
+  font-family: 'Unbounded', cursive;
 }
 
 .product-detail-image{
