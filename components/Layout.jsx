@@ -13,33 +13,29 @@ import  gif from '../public/styles/giv.gif';
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout container">
+    <div className="layout">
+      <Head>
 
-      <section className='firstSection'>        
-        <Head>
-        <div>
-            <Image className="gif"
-              src={gif} alt="gif-g"
-            />
-          </div>
-        </Head>
-        <header>
-          <Navbar />
-        </header>
-      </section>
-
-      <section className='secondSection'>
-        <main className="main-container">
-          {children}
-        </main>
-      </section>
       <div>
+          <Image className="gif"
+            src={gif} alt="gif-g"
+          />
+        </div>
+
+      </Head>
+      <header>
+        <Navbar />
+      </header>
+      <main className="main-container">
+        {children}
+
+     
+
+      </main>
       <footer>
         <Footer />
       </footer>
-      </div>
     </div>
-
   )
 }
 
