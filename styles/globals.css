@@ -1107,6 +1107,7 @@ padding: 30px 65px;
   }
   .product-detail-container{
     flex-wrap: wrap;
+    padding-left: 0px;
     }
   .product-detail-container .product-detail-image{
     width: 350px;
