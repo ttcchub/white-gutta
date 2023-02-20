@@ -1,0 +1,61 @@
+import React from 'react';
+import Image from 'next/image';
+
+import { client } from '../lib/client';
+
+import { Navbar, Product, FooterBanner, HeroBanner } from '../components';
+
+
+
+const Home = ({ products, bannerData, logoData}) => (
+
+  
+
+  <div>
+    
+    {/* <Navbar logoNav={logoData.length && logoData[0]}  /> */}
+    {/* <Navbar navBar={logoData && logoData[0]} /> */}
+
+  <div>
+    <FooterBanner footerBanner={bannerData && bannerData[0]} />
+  </div>
+    <div className="products-heading">
+      <article>
+        <h2>CYBER WORLD </h2>
+        <p> UPCOMING COLLECTION </p>
+      </article>
+    </div>
+
+    <div className="products-container">
+      {products?.map((product) => <Product key={product._id} product={product} />)}
+    </div>
+
+    {/* <HeroBanner heroBanner={bannerData.length && bannerData[0]}  /> */}
+  
+  </div>
+);
+
+
+
+// to fetch data NEXTjs use getServerSideProps 
+export const getServerSideProps = async () => {
+  const query = '*[_type == "product"]';
+  const products = await client.fetch(query);
+
+  const bannerQuery = '*[_type == "banner"]';
+  const bannerData = await client.fetch(bannerQuery);
+
+  const logoQuery = '*[_type == "logo"]';
+  const logoData = await client.fetch(logoQuery);
+
+
+
+  return {
+    props: { products, bannerData, logoData}
+  }
+}
+
+export default Home;
+
+
+
