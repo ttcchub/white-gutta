@@ -9,7 +9,10 @@ export default async function handler(req, res) {
       const params = {
         submit_type: 'pay',
         mode: 'payment',
-        // payment_method_types: ['card'],
+        discounts: [{
+          coupon: '{{COUPON_ID}}',
+        }],
+        payment_method_types: ['card'],
         billing_address_collection: 'auto',
         shipping_options: [
           { shipping_rate: 'shr_1MHC9lLX27mVeMm8KRhLRTIK' },
