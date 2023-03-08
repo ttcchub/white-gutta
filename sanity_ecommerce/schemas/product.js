@@ -45,6 +45,16 @@ export default {
       name: 'disableBtn',
       title: 'Disable Btn',
       type: 'boolean',
-    }
+    },
+    {
+      name: 'countInStock',
+      title: 'CountInStock',
+      type: 'number',
+    },
+    {
+      name: 'category',
+      title: 'Category',
+      type: 'string',
+    },
   ]
 }
