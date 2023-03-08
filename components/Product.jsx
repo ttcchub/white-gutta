@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { urlFor } from '../lib/client';
 
 // slug - an unique element
-const Product = ({ product: { image, name, slug, price, soldout, disableBtn } }) => {
+const Product = ({ product: { image, name, slug, price, soldout, disableBtn , countInStock} }) => {
 
   // Soo, useEffect here solving problem with slug.current The Effect Hook lets you perform side effects in function components:
 
@@ -31,6 +31,12 @@ const Product = ({ product: { image, name, slug, price, soldout, disableBtn } })
           <p className="product-name">{name}</p>
           <p className="product-price">${price}</p>
           <p className="product-name">{soldout}</p>
+          <p className="product-name">
+                          {countInStock > 0
+                            ? 'IN STOCK' 
+                            : 'SOLD OUT'}
+                        </p>
+          
         </div>
       </Link>
     </div>
