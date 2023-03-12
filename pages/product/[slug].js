@@ -82,7 +82,7 @@ const ProductDetails = ({ product, products }) => {
             <h3>Select Size:</h3>
               <ul>
               {
-                select_size.map((item,idx)=>(
+                select_size?.map((item,idx)=>(
                   <li key={idx} className={`${size === item?.size ? 'active' : null}`} onClick={()=>setSize(item?.size)}>{item?.size}</li>
                 ))
               }
