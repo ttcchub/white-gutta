@@ -30,13 +30,15 @@ const Product = ({ product: { image, name, slug, price, soldout, disableBtn , co
           />
           <p className="product-name">{name}</p>
           <p className="product-price">${price}</p>
+
+          
           <p className="product-name">{soldout}</p>
+
           <p className="product-name">
                           {countInStock > 0
                             ? 'IN STOCK' 
                             : 'SOLD OUT'}
                         </p>
-          
         </div>
       </Link>
     </div>
