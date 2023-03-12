@@ -11,7 +11,7 @@ import getStripe from '../lib/getStripe';
 
 const Cart = () => {
   const cartRef = useRef();
-  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
+  const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove, size } = useStateContext();
 
   const handleCheckout = async () => {
     const stripe = await getStripe();
@@ -81,7 +81,10 @@ const Cart = () => {
                 <div className="flex top">
                   <h5>{item.name}</h5>
                   <h4>${item.price}</h4>
+                  
                 </div>
+                <span className="cart_size">Size: <span>{size}</span></span>
+
                 <div className="flex bottom">
                   <div>
                   <p className="quantity-desc">

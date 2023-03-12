@@ -17,10 +17,10 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const ProductDetails = ({ product, products }) => {
-  const { image, name, details, price , size, soldout  } = product;
+  const { image, name, details, price , soldout, select_size  } = product;
   // gerring the product id 
   const [index, setIndex] = useState(0);
-  const { decQty, incQty, qty, onAdd, setShowCart , buttonsNext} = useStateContext();
+  const { decQty, incQty, qty, onAdd, setShowCart , buttonsNext, setSize, size} = useStateContext();
 
   const handleBuyNow = () => {
     onAdd(product, qty);
@@ -78,7 +78,17 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
           <p className="price">${price}</p>
-          <p className="size"> <br></br> {size}</p>
+          <div className='size'>
+            <h3>Select Size:</h3>
+              <ul>
+              {
+                select_size.map((item,idx)=>(
+                  <li key={idx} className={`${size === item?.size ? 'active' : null}`} onClick={()=>setSize(item?.size)}>{item?.size}</li>
+                ))
+              }
+              </ul>
+          </div>
+
           <div className="quantity">
           <h3>Quantity:</h3>
             <p className="quantity-desc">
@@ -151,7 +161,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug }}) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
-  const productsQuery = '*[_type == "product"]'
+  const productsQuery = '*[_type == "product"]{name,details,price,slug,image[],select_size[], category->{title,slug}}'
   
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);

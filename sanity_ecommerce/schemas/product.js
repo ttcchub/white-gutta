@@ -52,9 +52,25 @@ export default {
       type: 'number',
     },
     {
-      name: 'category',
-      title: 'Category',
-      type: 'string',
+      name: "category",
+      type: "reference",
+      to: [{ type: "category" }],
     },
+    {
+      title: "Select Size",
+      type: "array",
+      name: "select_size",
+      of: [
+        {
+          type: "object",
+          name: "inline",
+          fields: [
+            { type: "string", name: "size" },
+          ]
+        }
+      ]
+    },
+    
+
   ]
 }
